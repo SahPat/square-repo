@@ -1,12 +1,5 @@
-var circle = document.querySelector('.circle');
-  
-document.addEventListener('mousemove', function(event) {
-    var x = event.clientX;
-    var y = event.clientY;
-    var width = window.innerWidth;
-    var height = window.innerHeight;
-    var newX = (x / width * 100) + '%';
-    var newY = (y / height * 100) + '%';
-    circle.style.left = newX;
-    circle.style.top = newY;
+document.addEventListener("mousemove", function(event) {
+    var circle = document.querySelector(".sqs-block-code .circle");
+    circle.style.left = event.pageX + "px";
+    circle.style.top = event.pageY + "px";
 });
